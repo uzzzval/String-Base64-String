@@ -13,7 +13,6 @@ if(int(welcomeInput)==1 or int(welcomeInput)==2):
     elif int(welcomeInput)==2:
         inputString= raw_input("Enter the Base64 value to be converted to String:") 
         stringValue = base64.b64decode(inputString).decode('utf-8')
-        print "Base64 Value = " + stringValue
-    
+        print "Base64 Value = " + stringValue  
 else:
     print "Please enter a valid value."
